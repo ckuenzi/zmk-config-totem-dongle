@@ -6,7 +6,7 @@ layers:
   - E
   - R
   - T
-  - Z
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
   - U
   - I
   - O
@@ -22,15 +22,15 @@ layers:
   - {t: L, h: RALT}
   - {t: O, h: RGUI}
   - LSHFT
-  - Y
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
   - X
   - C
   - V
   - B
   - N
   - M
-  - ','
-  - .
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - KP MINUS
   - \
   - DEL
