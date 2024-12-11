@@ -16,6 +16,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/totem.h"
+#include "keys_de_swiss.h"
 
 #define BASE 0
 #define NAV  1
@@ -82,9 +83,9 @@ ZMK_HOLD_TAP(hmr,
              bindings = <
             // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
             
-                            &kp Q       &kp W       &kp E        &kp R        &kp T           &kp Z       &kp U        &kp I        &kp O        &kp P
+                            &kp Q       &kp W       &kp E        &kp R        &kp T           &kp DE_Z    &kp U        &kp I        &kp O        &kp P
                             &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G           &kp H       &hmr RSHFT J &hmr RCTRL K &hmr RALT L  &hmr RGUI O
-                &kp LSHFT   &kp Y       &kp X       &kp C        &kp V        &kp B           &kp N       &kp M        &kp COMMA    &kp DOT      &kp KP_MINUS &kp BSLH
+                &kp LSHFT   &kp DE_Y    &kp X       &kp C        &kp V        &kp B           &kp N       &kp M        &kp DE_COMMA &kp DE_DOT   &kp KP_MINUS &kp BSLH
                                                     &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
                                     >;
                             };
