@@ -1,3 +1,3 @@
 parse_config:
   zmk_additional_includes: ["zmk-helpers/include"]
-  raw_binding_map: {"DE_Y":"Y"}
+  raw_binding_map: {"(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))":"Y"}
