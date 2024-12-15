@@ -297,6 +297,12 @@ path.combo {
 <rect rx="6" ry="6" x="97" y="74" width="28" height="26" class="combo"/>
 <text x="111" y="87" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-1">
+<path d="M640,105 l-41,5" class="combo"/>
+<path d="M640,105 l43,9" class="combo"/>
+<rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
+<text x="640" y="105" class="combo tap">RET</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 366)" class="layer-NAVI">
@@ -502,6 +508,12 @@ path.combo {
 <rect rx="6" ry="6" x="97" y="74" width="28" height="26" class="combo"/>
 <text x="111" y="87" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-1">
+<path d="M640,105 l-41,5" class="combo"/>
+<path d="M640,105 l43,9" class="combo"/>
+<rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
+<text x="640" y="105" class="combo tap">RET</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 731)" class="layer-SYM">
@@ -515,40 +527,48 @@ path.combo {
 </g>
 <g transform="translate(144, 62) rotate(-4.0)" class="key keypos-1">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">@</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em" style="font-size: 88%">((LS(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">HID</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">…</tspan>
+</text>
 </g>
 <g transform="translate(212, 28)" class="key keypos-2">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">#</text>
-</g>
-<g transform="translate(271, 56)" class="key keypos-3">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">((ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 88%">((LS(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">HID</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">…</tspan>
 </text>
+</g>
+<g transform="translate(271, 56)" class="key trans keypos-3">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(330, 65)" class="key keypos-4">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">%</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em" style="font-size: 88%">((LS(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">HID</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">…</tspan>
+</text>
 </g>
 <g transform="translate(520, 65)" class="key keypos-5">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">^</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em" style="font-size: 88%">((LS(ZMK</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">HID</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">…</tspan>
+</text>
 </g>
 <g transform="translate(580, 56)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
+</text>
 </g>
 <g transform="translate(639, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">AGr+</tspan><tspan x="0" dy="1.2em">U</tspan>
+<tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
 </g>
 <g transform="translate(706, 62) rotate(4.0)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">(LS(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
+<tspan x="0" dy="-1.2em">((ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
 </g>
 <g transform="translate(773, 113) rotate(10.0)" class="key keypos-9">
@@ -693,6 +713,12 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="97" y="74" width="28" height="26" class="combo"/>
 <text x="111" y="87" class="combo tap">ESC</text>
+</g>
+<g class="combo combopos-1">
+<path d="M640,105 l-41,5" class="combo"/>
+<path d="M640,105 l43,9" class="combo"/>
+<rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
+<text x="640" y="105" class="combo tap">RET</text>
 </g>
 </g>
 </g>
@@ -860,6 +886,12 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="97" y="74" width="28" height="26" class="combo"/>
 <text x="111" y="87" class="combo tap">ESC</text>
+</g>
+<g class="combo combopos-1">
+<path d="M640,105 l-41,5" class="combo"/>
+<path d="M640,105 l43,9" class="combo"/>
+<rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
+<text x="640" y="105" class="combo tap">RET</text>
 </g>
 </g>
 </g>
