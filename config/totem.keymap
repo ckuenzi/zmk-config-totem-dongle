@@ -57,6 +57,11 @@ ZMK_HOLD_TAP(hmr,
             key-positions = <LT4 LT3>;
             bindings = <&kp ESC>;
         };
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <RM1 RM2 RM3>;
+            bindings = <&kp RET>;
+        };
     };
 
     macros {
@@ -86,7 +91,7 @@ ZMK_HOLD_TAP(hmr,
                             &kp Q       &kp W       &kp E        &kp R        &kp T           &kp DE_Z    &kp U        &kp I        &kp O        &kp P
                             &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G           &kp H       &hmr RSHFT J &hmr RCTRL K &hmr RALT L  &hmr RGUI O
                 &kp LSHFT   &kp DE_Y    &kp X       &kp C        &kp V        &kp B           &kp N       &kp M        &kp DE_COMMA &kp DE_DOT   &kp KP_MINUS &kp DLLR
-                                                    &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
+                                                    &kp DEL   &lt NAV TAB   &kp SPACE         &kp RET     &lt SYM ESC  &kp BSPC
                                     >;
                             };
 
@@ -126,7 +131,7 @@ ZMK_HOLD_TAP(hmr,
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     +     ┃     "     ┃     *     ┃     '     ┃     %     ┃   ┃     &     ┃     /     ┃           ┃     =     ┃     ?     ┃
+            //             ┃     +     ┃     "     ┃     *     ┃           ┃     %     ┃   ┃     &     ┃     /     ┃     =     ┃     '     ┃     ?     ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
             //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
@@ -136,9 +141,10 @@ ZMK_HOLD_TAP(hmr,
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp DE_PLUS     &kp AT       &kp HASH   &kp DE_SQT  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp DE_EQUAL     &kp DE_QMARK
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
+        &kp DE_PLUS  &kp DE_DQT   &kp DE_ASTRK &trans    &kp DE_PRCNT               &kp DE_AMPS     &kp DE_SLASH  &kp DE_EQUAL &kp DE_SQT &kp DE_QMARK
+        &kp RA(A)    &trans       &kp RA(S)    &trans    &trans                     &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
+&trans  &kp RA(F18)  &kp RA(F19)  &trans       &trans    &trans                     &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp 
+BSLH   &trans
                                   &trans     &trans    &mo ADJ      &trans        &kp C_PP        &trans
             >;
         };
