@@ -36,9 +36,9 @@ layers:
   - DEL
   - {t: TAB, h: NAVI}
   - SPACE
-  - RET
-  - {t: ESC, h: SYM}
   - BSPC
+  - {t: ESC, h: SYM}
+  - RET
   NAVI:
   - ESC
   - BT CLR
