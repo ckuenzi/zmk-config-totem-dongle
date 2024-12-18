@@ -6,7 +6,7 @@ layers:
   - E
   - R
   - T
-  - DE Z
+  - Z
   - U
   - I
   - O
@@ -22,15 +22,15 @@ layers:
   - {t: L, h: RALT}
   - {t: O, h: RGUI}
   - LSHFT
-  - DE Y
+  - Y
   - X
   - C
   - V
   - B
   - N
   - M
-  - DE COMMA
-  - DE DOT
+  - ','
+  - .
   - KP MINUS
   - $
   - DEL
@@ -44,8 +44,8 @@ layers:
   - BT CLR
   - UP
   - '='
-  - DE LBRC
-  - DE RBRC
+  - '{'
+  - '}'
   - KP 7
   - KP 8
   - KP 9
@@ -54,8 +54,8 @@ layers:
   - LEFT
   - DOWN
   - RIGHT
-  - DE LBKT
-  - DE RBKT
+  - '['
+  - ']'
   - KP 4
   - KP 5
   - KP 6
@@ -65,8 +65,8 @@ layers:
   - PG UP
   - CAPS
   - PG DN
-  - DE LPAR
-  - DE RPAR
+  - (
+  - )
   - KP 1
   - KP 2
   - KP 3
@@ -79,29 +79,29 @@ layers:
   - KP 0
   - {t: ▽, type: trans}
   SYM:
-  - DE PLUS
-  - DE DQT
-  - DE ASTRK
-  - DE EXCL
-  - DE PRCNT
-  - DE AMPS
-  - DE SLASH
-  - DE EQUAL
-  - DE SQT
-  - DE QMARK
-  - DE AT
-  - DE CARET
-  - DE GRAVE
-  - DE UMLAUT
+  - +
+  - '"'
+  - '*'
+  - '!'
+  - '%'
+  - '&'
+  - /
+  - '='
+  - ''''
+  - '?'
+  - '@'
+  - ^
+  - '`'
+  - UMLAUT
   - {t: ▽, type: trans}
   - MUTE
   - Sft+AGr+ 4
   - AGr+ 5
   - AGr+ 4
   - AGr+ O
-  - DE BSLH
-  - DE LT
-  - DE GT
+  - \
+  - <
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
