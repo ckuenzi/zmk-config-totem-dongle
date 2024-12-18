@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/totem.h"
-#include "keys_de_swiss.h"
+#include "<locale/keys_de_swiss.h>
 
 #define BASE 0
 #define NAV  1
