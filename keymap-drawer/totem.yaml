@@ -1,0 +1,163 @@
+layout: {qmk_keyboard: totem}
+layers:
+  BASE:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - DE Z
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
+  - G
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: O, h: RGUI}
+  - LSHFT
+  - DE Y
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - DE COMMA
+  - DE DOT
+  - KP MINUS
+  - $
+  - DEL
+  - {t: TAB, h: NAVI}
+  - SPACE
+  - BSPC
+  - {t: ESC, h: SYM}
+  - RET
+  NAVI:
+  - ESC
+  - BT CLR
+  - UP
+  - '='
+  - DE LBRC
+  - DE RBRC
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - LSHFT
+  - LEFT
+  - DOWN
+  - RIGHT
+  - DE LBKT
+  - DE RBKT
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP MINUS
+  - {t: ▽, type: trans}
+  - DEL
+  - PG UP
+  - CAPS
+  - PG DN
+  - DE LPAR
+  - DE RPAR
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP MULTIPLY
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ADJ
+  - KP 0
+  - {t: ▽, type: trans}
+  SYM:
+  - DE PLUS
+  - DE DQT
+  - DE ASTRK
+  - DE EXCL
+  - DE PRCNT
+  - DE AMPS
+  - DE SLASH
+  - DE EQUAL
+  - DE SQT
+  - DE QMARK
+  - DE AT
+  - DE CARET
+  - DE GRAVE
+  - DE UMLAUT
+  - {t: ▽, type: trans}
+  - MUTE
+  - Sft+AGr+ 4
+  - AGr+ 5
+  - AGr+ 4
+  - AGr+ O
+  - DE BSLH
+  - DE LT
+  - DE GT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOL DN
+  - VOL UP
+  - PREV
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ADJ
+  - {t: ▽, type: trans}
+  - {t: PP, type: held}
+  - {t: ▽, type: trans}
+  ADJ:
+  - '&sys_reset'
+  - BT CLR
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F12
+  - '&bootloader'
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
+  - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT PRV
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ESC
+- p: [16, 17, 18]
+  k: RET
