@@ -1,3 +1,4 @@
 parse_config:
   zmk_additional_includes: ["zmk-helpers/include", "zmk-locales"]
   raw_binding_map: {"DE Y":"Y"}
+  qmk_remove_keycode_prefix: ["KC_", "DE_"]
