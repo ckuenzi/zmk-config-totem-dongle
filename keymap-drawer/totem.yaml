@@ -31,7 +31,7 @@ layers:
   - M
   - ','
   - .
-  - KP MINUS
+  - '-'
   - $
   - DEL
   - {t: TAB, h: NAVI}
