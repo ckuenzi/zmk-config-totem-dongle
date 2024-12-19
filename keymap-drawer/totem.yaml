@@ -43,7 +43,7 @@ layers:
   - ESC
   - BT CLR
   - UP
-  - '='
+  - {t: ▽, type: trans}
   - '{'
   - '}'
   - KP 7
@@ -86,29 +86,29 @@ layers:
   - '%'
   - '&'
   - /
+  - \
   - '='
-  - ''''
   - '?'
   - '@'
+  - ''''
+  - '#'
   - ^
-  - '`'
-  - UMLAUT
-  - {t: ▽, type: trans}
-  - MUTE
-  - Sft+AGr+ 4
-  - AGr+ 5
-  - AGr+ 4
-  - AGr+ O
-  - \
   - <
   - '>'
+  - '|'
+  - UMLAUT
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
-  - PREV
-  - NEXT
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
