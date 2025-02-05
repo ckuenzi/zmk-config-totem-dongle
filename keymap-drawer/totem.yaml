@@ -161,6 +161,6 @@ combos:
   k: ESC
 - p: [16, 17, 18]
   k: RET
-- p: [27, 28]
-  k: (
+- p: [6, 7]
+  k: '{'
   l: [BASE, NAVI, SYM]
