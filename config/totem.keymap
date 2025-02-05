@@ -27,6 +27,16 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+// Hack: Make HRM combos tap-only (cf, ZMK issue #544).
+#define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
+  MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
+  ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
+
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
@@ -49,6 +59,17 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
+// Brace combos
+ZMK_COMBO(lbrc,  &kp DE_LBRC,     RT1 RT2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbrc,  &kp DE_RBRC,     RT2 RT3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lbkt,  &kp DE_LBKT,     RM1 RM2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbkt,  &kp DE_RBKT,     RM2 RM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lpar,  &kp DE_LPAR,     RB1 RB2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rpar,  &kp DE_RPAR,     RB2 RB3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+//Capsword
+ZMK_COMBO(capswordcombo,  &caps_word,     LB5 LM4,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -64,27 +85,6 @@ ZMK_HOLD_TAP(hmr,
         };
     };
     
-    #define COMBO_TERM_FAST 18
-    #define COMBO_TERM_SLOW 30
-    #define COMBO_IDLE_FAST 150
-    #define COMBO_IDLE_SLOW 50
-
-    // Hack: Make HRM combos tap-only (cf, ZMK issue #544).
-    #define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
-      MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
-      ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
-
-    // Brace combos
-    ZMK_COMBO(lbrc,  &kp DE_LBRC,     RT1 RT2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-    /*ZMK_COMBO(rbrc,  &kp DE_RBRC,     RT2 RT3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-    ZMK_COMBO(lbkt,  &kp DE_LBKT,     RM1 RM2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-    ZMK_COMBO(rbkt,  &kp DE_RBKT,     RM2 RM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-    ZMK_COMBO(lpar,  &kp DE_LPAR,     RB1 RB2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-    ZMK_COMBO(rpar,  &kp DE_RPAR,     RB2 RB3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-
-   //Capsword
-   ZMK_COMBO(rpar,  &caps_word,     LB5 LM4,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-*/
     macros {
     };
 
