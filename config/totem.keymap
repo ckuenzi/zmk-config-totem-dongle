@@ -63,6 +63,13 @@ ZMK_HOLD_TAP(hmr,
             bindings = <&kp RET>;
         };
     };
+    
+    #define COMBO_TERM_FAST 18
+    #define COMBO_TERM_SLOW 30
+    #define COMBO_IDLE_FAST 150
+    #define COMBO_IDLE_SLOW 50
+    
+    ZMK_COMBO(lpar,  &kp DE_LPAR,     RB1 RB2,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
     macros {
     };
