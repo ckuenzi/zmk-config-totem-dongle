@@ -69,7 +69,7 @@ ZMK_HOLD_TAP(hmr,
     #define COMBO_IDLE_FAST 150
     #define COMBO_IDLE_SLOW 50
     
-    ZMK_COMBO(lpar,  &kp DE_LPAR,     RB1 RB2,     DEF NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+    ZMK_COMBO(lpar,  &kp DE_LPAR,     RB1 RB2,    BASE NAV NUM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
     macros {
     };
