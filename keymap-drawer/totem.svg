@@ -67,8 +67,8 @@ text.footer {
     paint-order: stroke;
 }
 
-/* styling for combo tap, and key hold/shifted label text */
-text.combo, text.hold, text.shifted {
+/* styling for combo tap, and key non-tap label text */
+text.combo, text.hold, text.shifted, text.left, text.right {
     font-size: 11px;
 }
 
@@ -82,12 +82,20 @@ text.shifted {
     dominant-baseline: hanging;
 }
 
+text.left {
+    text-anchor: start;
+}
+
+text.right {
+    text-anchor: end;
+}
+
 text.layer-activator {
     text-decoration: underline;
 }
 
 /* styling for hold/shifted label text in combo box */
-text.combo.hold, text.combo.shifted {
+text.combo.hold, text.combo.shifted, text.combo.left, text.combo.right {
     font-size: 8px;
 }
 
@@ -293,6 +301,10 @@ path.combo {
 <rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
 <text x="640" y="105" class="combo tap">RET</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="595" y="141" width="28" height="26" class="combo"/>
+<text x="609" y="154" class="combo tap">(</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 366)" class="layer-NAVI">
@@ -492,6 +504,10 @@ path.combo {
 <rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
 <text x="640" y="105" class="combo tap">RET</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="595" y="141" width="28" height="26" class="combo"/>
+<text x="609" y="154" class="combo tap">(</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 731)" class="layer-SYM">
@@ -659,6 +675,10 @@ path.combo {
 <path d="M640,105 l43,9" class="combo"/>
 <rect rx="6" ry="6" x="626" y="92" width="28" height="26" class="combo"/>
 <text x="640" y="105" class="combo tap">RET</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="595" y="141" width="28" height="26" class="combo"/>
+<text x="609" y="154" class="combo tap">(</text>
 </g>
 </g>
 </g>
