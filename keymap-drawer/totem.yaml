@@ -178,6 +178,15 @@ combos:
 - p: [20, 10]
   k: '&caps_word'
   l: [BASE, NAVI, SYM]
+- p: [22, 24]
+  k: Ctl+X
+  l: [BASE, NAVI, SYM]
+- p: [22, 23]
+  k: Ctl+INS
+  l: [BASE, NAVI, SYM]
+- p: [23, 24]
+  k: Sft+INS
+  l: [BASE, NAVI, SYM]
 - p: [0, 1]
   k: ESC
 - p: [16, 17, 18]
