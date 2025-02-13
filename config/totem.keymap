@@ -60,7 +60,7 @@ ZMK_HOLD_TAP(hmr,
 )
 
 &caps_word {
-  continue-list = <KP_UNDERSCORE KP_MINUS KP_N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9>;
+  continue-list = <DEL BSPC KP_UNDERSCORE KP_MINUS KP_N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9>;
 };
 
 // Brace combos
@@ -77,22 +77,14 @@ ZMK_COMBO(copy,  &kp LC(INS),     LB3 LB2,    BASE NAV SYM, COMBO_TERM_FAST, COM
 ZMK_COMBO(paste, &kp LS(INS),     LB2 LB1,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Capsword
-ZMK_COMBO(cwcombo, &caps_word,    LB5 LM4,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(cwcombo, &caps_word,    LB4 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <LT4 LT3>;
-            bindings = <&kp ESC>;
-        };
-        combo_enter {
-            timeout-ms = <50>;
-            key-positions = <RM1 RM2 RM3>;
-            bindings = <&kp RET>;
-        };
-    };
+// Enter
+ZMK_COMBO(renter,  &kp RET,   RM1 RM2 RM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lenter,  &kp RET,   LM1 LM2 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)k
+
+// Esc
+ZMK_COMBO(lesc,    &kp ESC,       LT4 LT3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
     
     macros {
     };
@@ -121,7 +113,7 @@ ZMK_COMBO(cwcombo, &caps_word,    LB5 LM4,    BASE NAV SYM, COMBO_TERM_FAST, COM
                             &kp Q       &kp W       &kp E        &kp R        &kp T           &kp DE_Z    &kp U        &kp I        &kp O        &kp P
                             &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G           &kp H       &hmr RSHFT J &hmr RCTRL K &hmr RALT L  &hmr RGUI O
                 &kp LSHFT   &kp DE_Y    &kp X       &kp C        &kp V        &kp B           &kp N       &kp M        &kp DE_COMMA &kp DE_DOT   &kp DE_MINUS &kp DE_DLLR
-                                                    &kp DEL   &lt NAV TAB   &kp SPACE         &kp BSPC    &lt SYM ESC  &kp RET
+                                                    &lt ADJ DEL  &lt NAV TAB   &kp SPACE      &kp BSPC    &lt SYM ESC  &lt ADJ RET
                                     >;
                             };
 
@@ -189,18 +181,18 @@ ZMK_COMBO(cwcombo, &caps_word,    LB5 LM4,    BASE NAV SYM, COMBO_TERM_FAST, COM
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
             //             ┃   RESET   ┃ BT CLEAR  ┃  OUT TOG  ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
             //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ BOOTLOAD  ┃ BT NEXT   ┃           ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
+            //             ┃ BOOTLOAD  ┃ BT NEXT   ┃  BT PREV  ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
             // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃           ┃ BT PREV   ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
+            // ┃           ┃           ┃   PREV    ┃  PAUSE    ┃  NEXT     ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
             // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans                                  &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bootloader  &bt BT_NXT  &bt BT_PRV        &trans  &trans                              &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &kp K_PREV  &kp K_PLAY_PAUSE  &K_NEXT  &trans                             &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans        &trans  &trans                                  &trans  &trans  &trans
             >;
         };
     };
