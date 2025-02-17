@@ -195,18 +195,11 @@ ZMK_COMBO(cwcombo, &caps_word,    LM4 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COM
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans                                  &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &bt BT_PRV        &trans  &trans                              &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &kp K_PREV  &kp K_PLAY_PAUSE  &K_NEXT  &trans                             &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans                                  &trans  &trans  &trans
-
-
-//        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-
-//&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-
- //                                &trans        &trans  &trans    &trans  &trans  &trans
-            >;
+        &sys_reset   &bt BT_CLR  &out OUT_TOG      &trans      &trans                              &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bootloader  &bt BT_NXT  &bt BT_PRV        &trans      &trans                              &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans                              &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans            &trans      &trans                              &trans  &trans  &trans
+             >;
         };
     };
 };
