@@ -334,10 +334,8 @@ path.combo {
 <text x="242" y="154" class="combo tap">Sft+INS</text>
 </g>
 <g class="combo combopos-9">
-<path d="M122,171 l-17,35" class="combo"/>
-<path d="M122,171 l17,-35" class="combo"/>
-<rect rx="6" ry="6" x="108" y="158" width="28" height="26" class="combo"/>
-<text x="122" y="171" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<rect rx="6" ry="6" x="104" y="130" width="28" height="26" class="combo"/>
+<text x="118" y="143" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
 </g>
 <g class="combo combopos-10">
 <path d="M640,105 l-41,5" class="combo"/>
@@ -583,10 +581,8 @@ path.combo {
 <text x="242" y="154" class="combo tap">Sft+INS</text>
 </g>
 <g class="combo combopos-9">
-<path d="M122,171 l-17,35" class="combo"/>
-<path d="M122,171 l17,-35" class="combo"/>
-<rect rx="6" ry="6" x="108" y="158" width="28" height="26" class="combo"/>
-<text x="122" y="171" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<rect rx="6" ry="6" x="104" y="130" width="28" height="26" class="combo"/>
+<text x="118" y="143" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
 </g>
 <g class="combo combopos-10">
 <path d="M640,105 l-41,5" class="combo"/>
@@ -801,10 +797,8 @@ path.combo {
 <text x="242" y="154" class="combo tap">Sft+INS</text>
 </g>
 <g class="combo combopos-9">
-<path d="M122,171 l-17,35" class="combo"/>
-<path d="M122,171 l17,-35" class="combo"/>
-<rect rx="6" ry="6" x="108" y="158" width="28" height="26" class="combo"/>
-<text x="122" y="171" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<rect rx="6" ry="6" x="104" y="130" width="28" height="26" class="combo"/>
+<text x="118" y="143" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
 </g>
 <g class="combo combopos-10">
 <path d="M640,105 l-41,5" class="combo"/>

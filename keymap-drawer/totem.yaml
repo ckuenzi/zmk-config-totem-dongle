@@ -184,7 +184,7 @@ combos:
 - p: [23, 24]
   k: Sft+INS
   l: [BASE, NAVI, SYM]
-- p: [21, 11]
+- p: [10, 11]
   k: '&caps_word'
   l: [BASE, NAVI, SYM]
 - p: [16, 17, 18]
