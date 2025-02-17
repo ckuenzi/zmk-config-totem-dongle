@@ -59,9 +59,9 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
-&caps_word {
-  continue-list = <LSHIFT RSHIFT DEL BSPC UNDERSCORE KP_MINUS KP_N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9>;
-};
+//&caps_word {
+//  continue-list = <LSHIFT RSHIFT DEL BSPC UNDERSCORE KP_MINUS KP_N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9>;
+//};
 
 // Brace combos
 ZMK_COMBO(lbrc,  &kp DE_LBRC,     RT1 RT2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
