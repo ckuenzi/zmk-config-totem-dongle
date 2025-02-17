@@ -88,6 +88,7 @@ ZMK_COMBO(lesc,    &kp ESC,       LT4 LT3,    BASE NAV SYM, COMBO_TERM_FAST, COM
 
 / {
     combos {
+      compatible = "zmk,combos";
     };
     
     macros {
