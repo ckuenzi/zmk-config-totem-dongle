@@ -130,7 +130,7 @@ layers:
   - F12
   - '&bootloader'
   - BT NXT
-  - {t: ▽, type: trans}
+  - BT PRV
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,9 +140,9 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT PRV
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PREV
+  - PLAY PAUSE
+  - '&K_NEXT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
