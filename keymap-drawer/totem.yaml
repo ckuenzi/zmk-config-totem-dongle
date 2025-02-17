@@ -187,12 +187,6 @@ combos:
 - p: [10, 11]
   k: '&caps_word'
   l: [BASE, NAVI, SYM]
-- p: [16, 17, 18]
-  k: RET
-  l: [BASE, NAVI, SYM]
-- p: [13, 12, 11]
-  k: RET
-  l: [BASE, NAVI, SYM]
 - p: [0, 1]
   k: ESC
   l: [BASE, NAVI, SYM]
