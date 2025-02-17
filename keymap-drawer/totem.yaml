@@ -33,12 +33,12 @@ layers:
   - .
   - '-'
   - $
-  - DEL
+  - {t: DEL, h: ADJ}
   - {t: TAB, h: NAVI}
   - SPACE
   - BSPC
   - {t: ESC, h: SYM}
-  - RET
+  - {t: RET, h: ADJ}
   NAVI:
   - ESC
   - BT CLR
@@ -130,7 +130,7 @@ layers:
   - F12
   - '&bootloader'
   - BT NXT
-  - {t: ▽, type: trans}
+  - BT PRV
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,9 +140,9 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT PRV
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PREV
+  - PLAY PAUSE
+  - '&K_NEXT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
@@ -150,10 +150,10 @@ layers:
   - F3
   - F10
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
@@ -184,10 +184,15 @@ combos:
 - p: [23, 24]
   k: Sft+INS
   l: [BASE, NAVI, SYM]
-- p: [20, 10]
+- p: [21, 11]
   k: '&caps_word'
+  l: [BASE, NAVI, SYM]
+- p: [16, 17, 18]
+  k: RET
+  l: [BASE, NAVI, SYM]
+- p: [13, 12, 11]
+  k: RET
   l: [BASE, NAVI, SYM]
 - p: [0, 1]
   k: ESC
-- p: [16, 17, 18]
-  k: RET
+  l: [BASE, NAVI, SYM]
