@@ -142,7 +142,7 @@ layers:
   - {t: ▽, type: trans}
   - PREV
   - PLAY PAUSE
-  - '&K_NEXT'
+  - NEXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
