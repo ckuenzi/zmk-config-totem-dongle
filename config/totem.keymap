@@ -59,9 +59,9 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
-//&caps_word {
-//  continue-list = <LSHIFT RSHIFT DEL BSPC UNDERSCORE KP_MINUS KP_N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9>;
-//};
+&caps_word {
+  continue-list = <LSHIFT RSHIFT DEL BSPC UNDERSCORE KP_MINUS KP_N0 KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9>;
+};
 
 // Brace combos
 ZMK_COMBO(lbrc,  &kp DE_LBRC,     RT1 RT2,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
@@ -80,11 +80,11 @@ ZMK_COMBO(paste, &kp LS(INS),     LB2 LB1,    BASE NAV SYM, COMBO_TERM_FAST, COM
 ZMK_COMBO(cwcombo, &caps_word,    LM4 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Enter
-//ZMK_COMBO(renter,  &kp RET,   RM1 RM2 RM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
-//ZMK_COMBO(lenter,  &kp RET,   LM1 LM2 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(renter,  &kp RET,   RM1 RM2 RM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lenter,  &kp RET,   LM1 LM2 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Esc
-//ZMK_COMBO(lesc,    &kp ESC,       LT4 LT3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(lesc,    &kp ESC,       LT4 LT3,    BASE NAV SYM, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 / {
     combos {
@@ -118,8 +118,7 @@ ZMK_COMBO(cwcombo, &caps_word,    LM4 LM3,    BASE NAV SYM, COMBO_TERM_FAST, COM
                             &kp Q       &kp W       &kp E        &kp R        &kp T           &kp DE_Z    &kp U        &kp I        &kp O        &kp P
                             &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G           &kp H       &hmr RSHFT J &hmr RCTRL K &hmr RALT L  &hmr RGUI O
                 &kp LSHFT   &kp DE_Y    &kp X       &kp C        &kp V        &kp B           &kp N       &kp M        &kp DE_COMMA &kp DE_DOT   &kp DE_MINUS &kp DE_DLLR
-                                                    //&lt ADJ DEL  &lt NAV TAB   &kp SPACE      &kp BSPC    &lt SYM ESC  &lt ADJ RET
-                                                    &kp DEL   &lt NAV TAB   &kp SPACE         &kp BSPC    &lt SYM ESC  &kp RET
+                                                    &lt ADJ DEL  &lt NAV TAB   &kp SPACE      &kp BSPC    &lt SYM ESC  &lt ADJ RET
                                     >;
                             };
 
