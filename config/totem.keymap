@@ -118,7 +118,7 @@ ZMK_COMBO(lesc,    &kp ESC,       LT4 LT3,    BASE NAV SYM, COMBO_TERM_FAST, COM
                             &kp Q       &kp W       &kp E        &kp R        &kp T           &kp DE_Z    &kp U        &kp I        &kp O        &kp P
                             &hml LGUI A &hml LALT S &hml LCTRL D &hml LSHFT F &kp G           &kp H       &hmr RSHFT J &hmr RCTRL K &hmr RALT L  &hmr RGUI O
                 &kp LSHFT   &kp DE_Y    &kp X       &kp C        &kp V        &kp B           &kp N       &kp M        &kp DE_COMMA &kp DE_DOT   &kp DE_MINUS &kp DE_DLLR
-                                                    &lt ADJ DEL  &kp SPACE    &lt NAV TAB     &kp BSPC    &lt SYM ESC  &lt ADJ RET
+                                                    &lt ADJ DEL  &lt NAV TAB  &kp SPACE       &kp BSPC    &lt SYM ESC  &lt ADJ RET
                                     >;
                             };
 
