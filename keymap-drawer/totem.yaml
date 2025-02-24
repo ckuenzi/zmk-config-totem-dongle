@@ -34,8 +34,8 @@ layers:
   - '-'
   - $
   - {t: DEL, h: ADJ}
-  - SPACE
   - {t: TAB, h: NAVI}
+  - SPACE
   - BSPC
   - {t: ESC, h: SYM}
   - {t: RET, h: ADJ}
@@ -73,8 +73,8 @@ layers:
   - KP MULTIPLY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - ADJ
   - KP 0
   - {t: ▽, type: trans}
